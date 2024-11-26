@@ -1,0 +1,215 @@
+
+
+body {
+    background-image: url('./IMG/dark-green-background-with-bubbles-colorful-illustration-with-gradient-dots-in-nature-style-pattern-for-wallpapers-curtains-vector.jpg'); /* Ruta de la imagen */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen */
+    background-size: cover; /* Asegura que cubre toda la pantalla */
+    
+}
+/*https://acortar.link/s47jUt*/
+
+.background{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.presentacion_contenedor{
+
+    display:flex;
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente */
+
+}
+.titulo_presentacion {
+    text-align: center;
+    color:white;
+    padding: 40px;
+
+}
+
+.presentacion_img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-image-source: url("marco-dorado.png");
+    border-image-slice: 21;
+    border-image-width: 20px 40px;
+    border: 0px solid rgba(255,255,255,0.01);
+    box-shadow: 0  4px 30px rgb(224, 206, 39);
+    padding: 10px;
+    text-align: justify;
+}
+.presentacion{
+    
+    text-align: center;
+    color: white;
+    max-width: 600px;             /* Limita el ancho del texto */
+    padding:20px;                /* Añade espacio interno */
+    text-align: center;           /* Centra el texto */
+    border-radius: 8px;           /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    font-size: 1.5em;
+}
+
+
+
+
+#seccion2 {
+    text-align: center;
+    padding: 150px;
+
+}
+
+.titulo_h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color:white;
+    margin: top 80px;
+}
+.imgs2{
+
+    border: 0px solid rgba(255,255,255,0.01);
+    box-shadow: 0  4px 30px rgb(202, 201, 188);
+    border-radius: 30% ;
+}
+.imagenes_habilidad .fila {
+    display: flex; /* Organiza las imágenes en fila */
+    justify-content: center; /* Centra la fila horizontalmente */
+    gap: 70px; /* Espaciado entre imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si el espacio es pequeño */
+    object-fit: contain;
+}
+
+.imagenes_habilidad .fila img {
+    width: 140px; /* Ancho uniforme para todas las imágenes */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+.imagenes_habilidad .fila img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+#seccion3 {
+    text-align: center;
+    padding: 70px;
+}
+
+.descripcion_proyectos{
+
+    color: white;
+    display:flex;
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente */
+    text-align: center;
+}
+
+#seccion4{
+    text-align: center;
+    padding: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container-bar {
+    width: 100%;
+    max-width: 50px;
+    position: fixed;
+    left: 0;
+    top: 25%;
+}
+.container-bar a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: all 500ms ease;
+    color: #fff;
+}
+.container-bar a:hover {
+    background: #1c1c1c;
+}
+.container-bar .fa-facebook {
+    background: #3b5998;
+    border-radius: 0px 5px 0px 0px;
+}
+.container-bar .fa-youtube {
+    background: #e52a23;
+}
+.container-bar .fa-github {
+    background: #747473;
+}
+.container-bar .fa-linkedin {
+    background: #0c00b1;
+    border-radius: 0px 0px 5px 0px;
+}
+.container-bar #title {
+    position: absolute;
+    background: #1c1c1c;
+    padding: 0px 8px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 15px;
+    top: 12px;
+    left: 0px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.container-bar a:hover #title {
+    opacity: 1;
+    visibility: visible;
+    left: 64px;
+}
+.container-bar #title:after {
+    position: absolute;
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 6px solid #1c1c1c;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    right: 100%;
+    top: 8px;
+}
+#btn-social {
+    display: none;
+}
+.fa-play {
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+    transform: rotate(180deg);
+    color: #49b0e6;
+}
+#btn-social:checked ~ .fa-play {
+    transform: rotate(0deg);
+}
+.icon-social {
+    transition: all 0.4s;
+    transform: translateX(0%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+#btn-social:checked ~ .icon-social {
+    transform: translateX(-100%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0);
+}
